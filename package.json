@@ -1,14 +1,16 @@
 {
   "name": "react-practice-namaste",
   "source": "index.html",
-  "browserlist": ["> 0,5%, last 2 versions, not dead"],
+  "browserslist": [
+    "> 0.5%, last 2 versions, not dead"
+  ],
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel",
-    "build": "parcel-build"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.8.3",
     "process": "^0.11.10"
   }
